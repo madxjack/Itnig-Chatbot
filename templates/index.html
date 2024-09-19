@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Itnig chat</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#FFC107',
+                        secondary: '#333333',
+                        background: '#F3F4F6',
+                    },
+                },
+            },
+        }
+    </script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body class="bg-background text-secondary h-screen flex items-center justify-center p-4">
+    <div class="w-full max-w-4xl h-full max-h-[800px] flex flex-col bg-white shadow-2xl rounded-xl overflow-hidden">
+        <div class="bg-primary p-6 flex items-center justify-between">
+            <div class="flex items-center">
+                <div class="w-10 h-10 rounded-full bg-secondary text-white flex items-center justify-center mr-3">
+                    <i class="fas fa-robot"></i>
+                </div>
+                <h1 class="text-secondary text-2xl font-bold">Itnig chat</h1>
+            </div>
+            <button class="text-secondary hover:text-gray-700 transition-colors">
+                <i class="fas fa-cog text-xl"></i>
+            </button>
+        </div>
+        <div id="chat-messages" class="flex-grow overflow-y-auto p-6 space-y-4"></div>
+        <div class="p-6 bg-background">
+            <div class="flex space-x-4">
+                <input type="text" id="user-input" class="flex-grow px-4 py-3 bg-white text-secondary border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="Ask a question about the Itnig's podcasts...">
+                <button id="send-button" class="px-6 py-3 bg-primary text-secondary rounded-lg hover:bg-primary/90 transition-colors flex items-center">
+                    <span class="mr-2">Send</span>
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="static/script.js"></script>
+</body>
+</html>

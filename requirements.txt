@@ -1,0 +1,6 @@
+flask
+pandas
+llama-index
+llama-index-experimental
+llama-index-llms-groq
+python-dotenv
