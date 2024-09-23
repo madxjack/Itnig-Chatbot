@@ -40,4 +40,4 @@ def query():
         return jsonify({'error': f'An error occurred while processing your query: {str(e)}'}), 500
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run()
